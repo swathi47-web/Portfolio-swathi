@@ -1,0 +1,26 @@
+{
+  "name": "Illuru Taraka Swathi - AI/ML Engineer",
+  "short_name": "TS Portfolio",
+  "description": "Professional portfolio of Illuru Taraka Swathi, AI/ML Engineer",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#e94560",
+  "background_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "favicons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

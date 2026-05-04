@@ -1,0 +1,567 @@
+.about {
+  padding: 80px 0;
+  background: linear-gradient(135deg, rgba(233, 69, 96, 0.05), transparent);
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #888;
+}
+
+.personal-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #e94560;
+}
+
+.info-value {
+  color: #888;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.service-card {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: rgba(233, 69, 96, 0.1);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #e94560;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-info {
+    grid-template-columns: 1fr;
+  }
+}
+/* Add these styles to src/components/About.css */
+
+/* Education, Certifications, and Internships Sections */
+.education-section,
+.certifications-section,
+.internships-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(233, 69, 96, 0.2);
+}
+
+.education-section h3,
+.certifications-section h3,
+.internships-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #e94560;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Education Items */
+.education-item {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid #e94560;
+  background: rgba(233, 69, 96, 0.05);
+  border-radius: 0 10px 10px 0;
+  transition: all 0.3s ease;
+}
+
+.education-item:hover {
+  background: rgba(233, 69, 96, 0.1);
+  transform: translateX(5px);
+}
+
+.education-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: inherit;
+}
+
+.education-item p {
+  font-size: 0.9rem;
+  color: #888;
+  margin: 0;
+}
+
+.education-period {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #e94560;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+/* Certifications List */
+.certifications-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.certifications-section li {
+  margin-bottom: 0.75rem;
+  color: #888;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.4;
+  transition: all 0.3s ease;
+}
+
+.certifications-section li:hover {
+  color: #e94560;
+  transform: translateX(5px);
+}
+
+.certifications-section li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #e94560;
+}
+
+/* Internships Section */
+.internship-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: rgba(233, 69, 96, 0.05);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.internship-item:hover {
+  background: rgba(233, 69, 96, 0.1);
+  transform: translateX(5px);
+}
+
+.internship-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: #e94560;
+}
+
+.internship-period {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #ff6b6b;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.internship-item p {
+  font-size: 0.9rem;
+  color: #888;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .education-item,
+  .internship-item {
+    padding: 0.75rem;
+  }
+  
+  .certifications-section li {
+    font-size: 0.85rem;
+  }
+  
+  .education-section h3,
+  .certifications-section h3,
+  .internships-section h3 {
+    font-size: 1.2rem;
+  }
+}
+/* Update About.css with background images */
+
+.about {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background patterns and gradients */
+.about-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.bg-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(233, 69, 96, 0.1) 0%, transparent 50%),
+    repeating-linear-gradient(45deg, rgba(233, 69, 96, 0.02) 0px, rgba(233, 69, 96, 0.02) 2px, transparent 2px, transparent 8px);
+  pointer-events: none;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 0% 0%, rgba(233, 69, 96, 0.08), transparent 50%);
+  pointer-events: none;
+}
+
+/* Service Cards with Background Images */
+.service-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  min-height: 280px;
+}
+
+.service-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+
+.service-card:hover .service-card-overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)) !important;
+}
+
+.service-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 1.5rem;
+  color: white;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.2rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.service-card:hover .service-icon-wrapper {
+  transform: scale(1.1) rotate(5deg);
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* Add floating animation to service cards */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.service-card {
+  animation: float 3s ease-in-out infinite;
+  animation-delay: calc(var(--index, 0) * 0.2s);
+}
+
+.service-card:nth-child(1) { --index: 0; }
+.service-card:nth-child(2) { --index: 1; }
+.service-card:nth-child(3) { --index: 2; }
+.service-card:nth-child(4) { --index: 3; }
+
+.service-card:hover {
+  animation: none;
+}
+
+/* Ensure text content is readable */
+.about-text,
+.education-section,
+.certifications-section,
+.internships-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Glass morphism effect for text sections */
+.about-text {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.light-mode .about-text {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-card-content {
+    padding: 1.5rem;
+  }
+  
+  .service-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+  }
+  
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+  
+  .about-text {
+    padding: 1rem;
+  }
+}
+/* Add to About.css, Projects.css, Skills.css */
+.service-card, .project-card, .skill-category {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(233, 69, 96, 0.2);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover, .project-card:hover, .skill-category:hover {
+  transform: translateY(-10px);
+  border-color: rgba(233, 69, 96, 0.5);
+  box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+}
+/* Add these styles to your existing About.css */
+
+/* Base styles for about section */
+.about {
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* Dark Mode Text Styles */
+body.dark-mode .about-text p {
+  color: #cccccc;
+}
+
+body.dark-mode .info-value {
+  color: #cccccc;
+}
+
+body.dark-mode .service-card p {
+  color: #aaaaaa;
+}
+
+body.dark-mode .education-item p {
+  color: #bbbbbb;
+}
+
+body.dark-mode .internship-item p {
+  color: #bbbbbb;
+}
+
+body.dark-mode .certifications-section li {
+  color: #bbbbbb;
+}
+
+/* Light Mode Text Styles */
+body.light-mode .about-text p {
+  color: #444444;
+}
+
+body.light-mode .info-value {
+  color: #444444;
+}
+
+body.light-mode .service-card {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .service-card p {
+  color: #555555;
+}
+
+body.light-mode .service-card h3 {
+  color: #e94560;
+}
+
+body.light-mode .education-item {
+  background: rgba(233, 69, 96, 0.05);
+  border-left: 2px solid #e94560;
+}
+
+body.light-mode .education-item p {
+  color: #555555;
+}
+
+body.light-mode .education-item h4 {
+  color: #1a1a2e;
+}
+
+body.light-mode .internship-item {
+  background: rgba(233, 69, 96, 0.05);
+}
+
+body.light-mode .internship-item p {
+  color: #555555;
+}
+
+body.light-mode .internship-item h4 {
+  color: #e94560;
+}
+
+body.light-mode .certifications-section li {
+  color: #555555;
+}
+
+body.light-mode .certifications-section li::before {
+  color: #e94560;
+}
+
+body.light-mode .education-section h3,
+body.light-mode .certifications-section h3,
+body.light-mode .internships-section h3 {
+  color: #e94560;
+}
+
+/* Education Meta in Light Mode */
+body.light-mode .education-period {
+  color: #e94560;
+}
+
+body.light-mode .education-percentage {
+  color: #ff6b6b;
+}
+
+body.light-mode .internship-period {
+  color: #ff6b6b;
+}
+
+/* Personal Info Light Mode */
+body.light-mode .personal-info .info-label {
+  color: #e94560;
+}
+
+body.light-mode .about-text {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-info {
+    grid-template-columns: 1fr;
+  }
+}
