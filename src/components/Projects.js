@@ -53,7 +53,7 @@ const Projects = () => {
       category: 'frontend',
       description: 'A professional portfolio website showcasing AI/ML projects, research papers, and certifications with galaxy theme, dark mode, and responsive design. Features include animations, project filtering, and certificate viewer.',
       tech: ['React', 'Framer Motion', 'CSS3', 'EmailJS', 'React Icons'],
-      github: 'https://github.com/yourusername/ai-ml-portfolio',
+      github: 'https://github.com/swathi47-web/Portfolio-swathi',
       demo: 'https://your-portfolio-demo.com',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9hcKUbxsmY5HmX_26-QuaiandcalBf8UDg&s',
       icon: '🚀'
